@@ -1,0 +1,40 @@
+@media screen and (min-width: 1024px){
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hamburguer {
+        display: none;
+    }
+
+    .navigation {
+        position: static;
+        display: block !important;
+        width: auto;
+        background: none;
+        padding: 0;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .navigation ul li a {
+        display: inline-block;
+        border: none;
+        color: #fff;
+    }
+
+    #camera-img {
+        cursor: pointer;
+    }
+
+    #upload-img {
+        cursor: pointer;
+    }
+}

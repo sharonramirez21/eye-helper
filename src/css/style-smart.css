@@ -1,0 +1,171 @@
+/* ====== GENERAL ====== */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+/* ====== HEADER ====== */
+header {
+    position: relative;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/******************** NAVEGATION ***************************/
+.hamburguer {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #ffffff;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: block;
+}
+
+.hamburguer::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburguer.show::before {
+    content: "\00D7";
+}
+
+.open a {
+    display: block;
+}
+
+
+/*********************** nav menu ***************************/
+.navigation {
+    position: absolute;
+    display: none;
+    background-color: #F8F700;
+    width: 100%;
+    margin-top: 5px;
+    left: 0;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: solid 1px #ddd;
+    font-family: 'Open Sans', serif;
+    font-size: 2rem;
+}
+
+.navigation li.current a {
+    background-color: #fff;
+    color: #F8F700;
+}
+
+.navigation a:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* ====== MAIN CONTAINER ====== */
+.main-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 30px 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+/* ====== TITLE ====== */
+.section-title {
+    background: #F8F700;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Atkinson Hyperlegible',sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+/* ====== ACTION BUTTONS ====== */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.action-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action-item img {
+    width: 180px;
+}
+
+.action-label {
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ====== READ BUTTON ====== */
+.read-btn {
+    background: #F8F700;
+    color: black;
+    border: none;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    text-align: center;
+    color: gray;
+    padding: 20px;
+    font-size: 1rem;
+}
