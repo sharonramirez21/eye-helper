@@ -43,13 +43,13 @@ readBtn.addEventListener("click", async () => {
         return;
     }
 
-    readBtn.textContent = "Processing";
+    readBtn.textContent = "Processing...";
     readBtn.disabled = true;
 
     try {
         const text = await ProcessImgOCR(lastSelectedFile);
-
-        alert("OCR result: \n\n" + text);
+        localStorage.setItem("ocrText", text); // we save the text in the localstorage
+        window.location.href = "./textOCR/index.html"; // charge the index.html ocr result
     }
     catch (err) {
         alert("Error" + err.message);

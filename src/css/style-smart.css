@@ -169,3 +169,39 @@ footer {
     padding: 20px;
     font-size: 1rem;
 }
+
+/* ======= result page text ======*/
+.result-title {
+    color: #F8F700;
+    margin-left: 20px;
+}
+
+#ocr-output {
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 15px;
+    font-size: 2rem;
+    line-height: 1.5;
+    background-color: #F8F700;
+    border: 2px solid #e6d700;
+    border-radius: 10px;
+    font-family: 'Open Sans', serif;
+    color: #000;
+    font-weight: bold;
+}
+
+#back-btn {
+    display: block;
+    margin: 0 auto;
+    background: #F8F700;
+    color: black;
+    border: none;
+    width: 40%;
+    padding: 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+}

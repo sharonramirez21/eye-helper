@@ -37,4 +37,8 @@
     #upload-img {
         cursor: pointer;
     }
+
+    .result-title {
+        margin-left: 60px;
+    }
 }
