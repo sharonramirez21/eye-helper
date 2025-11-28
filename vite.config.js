@@ -8,7 +8,8 @@ export default defineConfig({
     outDir: "../dist",
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "src/index.html")
+        main: resolve(__dirname, "src/index.html"),
+        ocr: resolve(__dirname, "src/textOCR/index.html"),
       },
     },
   },
