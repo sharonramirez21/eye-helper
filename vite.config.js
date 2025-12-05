@@ -11,7 +11,6 @@ export default defineConfig({
         main: resolve(__dirname, "src/index.html"),
         ocr: resolve(__dirname, "src/textOCR/index.html"),
         history: resolve(__dirname, "src/history/index.html"),
-        view: resolve(__dirname, "src/history/view.html"),
       },
     },
   },
