@@ -1,9 +1,14 @@
-const navButton = document.querySelector('#ham-btn');
+import { loadHeaderFooter } from "./utils";
 
-/*select the nav element*/
-const navBar = document.querySelector('#nav-bar');
+loadHeaderFooter();
 
-navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navBar.classList.toggle('show');
+
+document.addEventListener("headerLoaded", () => {
+    const navButton = document.querySelector('#ham-btn');
+    const navBar = document.querySelector('#nav-bar');
+
+    navButton.addEventListener('click', () => {
+        navButton.classList.toggle('show');
+        navBar.classList.toggle('show');
+    });
 });

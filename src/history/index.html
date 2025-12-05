@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eye Helper | History</title>
+    <link rel="stylesheet" href="../css/style-smart.css">
+    <link rel="stylesheet" href="../css/style-large.css" media="screen and (min-width: 768px)">
+
+    <script type="module" src="../js/navegation.js" defer></script>
+    <script type="module" src="../js/history.js" defer></script>
+</head>
+
+<body>
+    <header class="divider" id="header-content"></header>
+    <main>
+        <section class="notes-section">
+            <h2>My Notes</h2>
+            <div class="controls">
+                <label for="filter-date">Filter by date:</label>
+                <input type="date" id="filter-date">
+                <button id="reset-filter">Show All</button>
+            </div>
+            <div id="history-list" class="history-container"></div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+</html>

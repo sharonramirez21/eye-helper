@@ -125,6 +125,11 @@ header {
     margin-bottom: 10px;
 }
 
+.section-title h3 {
+    padding: 0;
+    margin: 5px;
+}
+
 /* ====== ACTION BUTTONS ====== */
 .action-buttons {
     display: flex;
@@ -204,4 +209,76 @@ footer {
     font-weight: bold;
     border-radius: 40px;
     cursor: pointer;
+}
+
+/************** History Page *******************/
+.notes-section h2 {
+    text-align: center;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 40px;
+    color: #F8F700;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 20px;
+    text-align: center;
+}
+
+.result-notfound {
+    text-align: center;
+    font-size: 30px;
+}
+
+.date-section {
+    color: #F8F700;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.history-card {
+    border-radius: 10px;
+    padding: 12px;
+    margin: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: 'Open Sans', serif;
+    font-size: 18px;
+}
+
+.history-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.listen-btn, .pause-btn {
+    background-color: #F8F700;
+    color: #000;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    margin-right: 5px;
+}
+
+
+.listen-btn:hover, .pause-btn:hover {
+    background-color: #e6d700;
+    transform: scale(1.05);
+}
+
+
+.listen-btn.playing {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); background-color: #F8F700; }
+    50% { transform: scale(1.1); background-color: #e6d700; }
+    100% { transform: scale(1); background-color: #F8F700; }
 }
