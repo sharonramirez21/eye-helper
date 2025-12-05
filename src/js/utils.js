@@ -16,8 +16,8 @@ export async function loadHeaderFooter() {
   const afterSrc = currentPath.split("/src/")[1];
 
   if (!afterSrc) {
-    const headerTem = await loadTemplate(`../assets/partials/header.html`);
-    const footerTem = await loadTemplate(`../assets/partials/footer.html`);
+    const headerTem = await loadTemplate(`/assets/partials/header.html`);
+    const footerTem = await loadTemplate(`/assets/partials/footer.html`);
   
     renderWithTemplate(headerTem, document.querySelector("#header-content"));
     renderWithTemplate(footerTem, document.querySelector("#footer"));

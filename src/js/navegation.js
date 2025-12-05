@@ -2,7 +2,6 @@ import { loadHeaderFooter } from "./utils";
 
 loadHeaderFooter();
 
-
 document.addEventListener("headerLoaded", () => {
     const navButton = document.querySelector('#ham-btn');
     const navBar = document.querySelector('#nav-bar');
